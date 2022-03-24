@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <!-- menghubungkan jquery -->
+        <script type="text/javascript" src="jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".box1").ready(function(){$("#kotak1").addClass("kuning")});
+                //menampilkan kotak kuning dari class box1
+                $(".box1").dblclick(function(){$("#kotak1").addClass("merah")});
+                //kotak berubah menjadi merah ketika di klik 2 kali
+                $(".box2").ready(function(){$("#kotak2").addClass("kuning")});
+                //menampilkan kotak kuning dari class box2
+                $(".box2").dblclick(function(){$("#kotak2").addClass("merah")});
+                //kotak berubah menjadi merah ketika di klik 2 kali
+                $(".box3").ready(function(){$("#kotak3").addClass("kuning")});
+                //menampilkan kotak kuning dari class box3
+                $(".box3").dblclick(function(){$("#kotak3").addClass("merah")});
+                //kotak berubah menjadi merah ketika di klik 2 kali
+                $(".box4").ready(function(){$("#kotak4").addClass("kuning")});
+                //menampilkan kotak kuning dari class box4
+                $(".box4").dblclick(function(){$("#kotak4").addClass("merah")});
+                //kotak berubah menjadi merah ketika di klik 2 kali
+            });
+        </script>
+        <style type="text/css">
+            /* memberi warna kuning pada kotak */
+            .kuning{
+                width: 100px;
+                height: 100px;
+                background-color: yellow;
+                border: none;
+            }
+            /* memberi warna merah pada kotak */
+            .merah{
+                background-color: red;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <p> Klik 2x pada setiap kotak untuk mengubah warna </p>
+        <!-- membuat kotak -->
+        <table>
+            <tr>
+                <td class="box1" id="kotak1"> </td>
+                <td class="box2" id="kotak2"> </td>
+                <td class="box3" id="kotak3"> </td>
+                <td class="box4" id="kotak4"> </td>
+            </tr>
+        </table>
+    </body>
+</html>

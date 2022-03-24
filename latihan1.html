@@ -1,0 +1,28 @@
+<html>
+    <head>
+	    <!-- menghubungkan jquery -->
+	    <script type="text/javascript" src="jquery-3.6.0.js"></script>
+	    <script type="text/javascript">
+		    $(document).ready(function(){
+                $(".hide1").click(function(){$("#gambar1").hide("slow")}); //menyembunyikan gambar1
+                $(".show1").click(function(){$("#gambar1").show("slow")}); //menampilkan gambar1
+                $(".hide2").click(function(){$("#gambar2").hide("slow")}); //menyembunyikan gambar2
+			    $(".show2").click(function(){$("#gambar2").show("slow")}); //menampilkan gambar2
+		    });
+	    </script>
+    </head>
+    <body>
+        <button class="hide1">Sembunyikan</button><!-- membuat button sembunyikan -->
+        <button class="show1">Tampilkan</button><!-- membuat button sembunyikan -->
+        <br>
+        <br>
+        <img id="gambar1"src="gambar1.jpeg"> <!-- menampilkan gambar1 -->
+        <br>
+        <br>
+        <button class="hide2">Sembunyikan</button><!-- membuat button sembunyikan -->
+        <button class="show2">Tampilkan</button><!-- membuat button sembunyikan -->
+        <br>
+        <br>
+        <img id="gambar2"src="gambar2.jpeg"> <!-- menampilkan gambar2 -->
+    </body>
+</html>
